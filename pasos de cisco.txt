@@ -1,0 +1,20 @@
+Congifuracion basica de un Router Cisco.
+Paso 1 entrar al router y escribir el comando "enable"
+paso 2 escribir el comando "configure terminal"
+Paso 3 escribir "hostname" espacio y el nombre del equipo, en este caso seria R1 o como quiera llamarlo
+Paso 4 Ahora protegeremos las redes, ingresaremos el siguiente comando "line console 0"
+	una vez desntro usaremos el comando "password" espacio e ingresaremos la contraseña
+	despues vamos a escribir el comando "login" para guardar la contraseña de la linea.
+Paso 5 Vamos a ingresar a las lineas vty con el comando "line vty 0 4"
+	seguido ingresaremos la contraseña con el comando "password" mas la contraseña
+	seguido pondremos el comando "login" para guardar la configuracion de las lineas.
+Paso 6 saldremos de la lineas con el comando "exit" y volveremos a la configuracion de la terminal
+	pondremos el comando "enable secret" mas la contraseña.
+Paso 7 seguido ingresaremos un comando para encriptar las contraseñas y sea mas complicado ingresar
+	usaremos el comando "service-password encryption"
+Paso 8 luego pondremos el mensaje del dia, con este puedes poner un pequeño mensaje para el usuario
+	usaremos el comando "banner motd l" al usar el l es un metodo de ingreso de texto asi que te pedira escribir el texto
+	por ejemplo: ***Acceso denegado*** l
+Paso 9 ya solo queda guardar la configuracion con el siguiente comando, que en este caso es "copy running-config startup-config"
+
+Y listo, ya tenemos la configuracion basica de un Router Cisco.
